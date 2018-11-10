@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="239" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="Day6Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="239"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="265" height="238.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84m-S0-aMb">
+                        <rect key="frame" x="2" y="8" width="261" height="222.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pequena-sereia" translatesAutoresizingMaskIntoConstraints="NO" id="Hy5-1B-66U">
+                                <rect key="frame" x="0.0" y="0.0" width="261" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="hhw-QM-BhB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Truth Behind the Mermaid Myth Revealed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-Xl-a3n">
+                                <rect key="frame" x="4" y="158" width="253" height="38.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 OCt 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le3-Uk-ILZ">
+                                <rect key="frame" x="4" y="204.5" width="249" height="17"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hy5-1B-66U" firstAttribute="leading" secondItem="84m-S0-aMb" secondAttribute="leading" id="0JI-38-ou3"/>
+                            <constraint firstAttribute="trailing" secondItem="Hy5-1B-66U" secondAttribute="trailing" id="8T4-KL-xIk"/>
+                            <constraint firstItem="le3-Uk-ILZ" firstAttribute="top" secondItem="2eh-Xl-a3n" secondAttribute="bottom" constant="8" id="98n-bb-aU7"/>
+                            <constraint firstItem="2eh-Xl-a3n" firstAttribute="top" secondItem="Hy5-1B-66U" secondAttribute="bottom" constant="8" id="J0m-m2-vEq"/>
+                            <constraint firstItem="2eh-Xl-a3n" firstAttribute="leading" secondItem="84m-S0-aMb" secondAttribute="leading" constant="4" id="KFW-99-4b8"/>
+                            <constraint firstItem="le3-Uk-ILZ" firstAttribute="leading" secondItem="84m-S0-aMb" secondAttribute="leading" constant="4" id="Zqf-6O-ElV"/>
+                            <constraint firstItem="Hy5-1B-66U" firstAttribute="top" secondItem="84m-S0-aMb" secondAttribute="top" id="c7Q-aq-Z62"/>
+                            <constraint firstAttribute="trailing" secondItem="2eh-Xl-a3n" secondAttribute="trailing" constant="4" id="pce-LS-CG9"/>
+                            <constraint firstAttribute="trailing" secondItem="le3-Uk-ILZ" secondAttribute="trailing" constant="8" id="vLQ-NU-7nv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="84m-S0-aMb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="Ei2-jv-d5e"/>
+                    <constraint firstAttribute="trailing" secondItem="84m-S0-aMb" secondAttribute="trailing" constant="2" id="HwF-QQ-dEO"/>
+                    <constraint firstItem="84m-S0-aMb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ZH2-rR-nkg"/>
+                    <constraint firstAttribute="bottom" secondItem="84m-S0-aMb" secondAttribute="bottom" constant="8" id="ja6-Y2-Deg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieImg" destination="Hy5-1B-66U" id="M0M-dJ-TPq"/>
+                <outlet property="releaseDate" destination="le3-Uk-ILZ" id="7aA-H8-njb"/>
+                <outlet property="title" destination="2eh-Xl-a3n" id="FB2-8X-7dV"/>
+            </connections>
+            <point key="canvasLocation" x="32.799999999999997" y="20.239880059970016"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pequena-sereia" width="970" height="545"/>
+    </resources>
+</document>

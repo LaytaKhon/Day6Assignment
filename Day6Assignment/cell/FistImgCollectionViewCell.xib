@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FistImgCollectionViewCell" id="gTV-IL-0wX" customClass="FistImgCollectionViewCell" customModule="Day6Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fV-1P-oK1">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainfish" translatesAutoresizingMaskIntoConstraints="NO" id="H8Q-TS-B4G">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="H8Q-TS-B4G" secondAttribute="bottom" id="d3v-Yj-jxh"/>
+                            <constraint firstItem="H8Q-TS-B4G" firstAttribute="leading" secondItem="3fV-1P-oK1" secondAttribute="leading" id="hqO-Xg-r83"/>
+                            <constraint firstItem="H8Q-TS-B4G" firstAttribute="top" secondItem="3fV-1P-oK1" secondAttribute="top" id="hyg-u0-6Q7"/>
+                            <constraint firstAttribute="trailing" secondItem="H8Q-TS-B4G" secondAttribute="trailing" id="uH9-kg-txz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3fV-1P-oK1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8B7-fK-LDV"/>
+                <constraint firstAttribute="trailing" secondItem="3fV-1P-oK1" secondAttribute="trailing" id="9qK-D5-L3z"/>
+                <constraint firstItem="3fV-1P-oK1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TSw-8f-fUg"/>
+                <constraint firstAttribute="bottom" secondItem="3fV-1P-oK1" secondAttribute="bottom" id="VX3-il-e48"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="50" height="142"/>
+            <connections>
+                <outlet property="fishCellImg" destination="H8Q-TS-B4G" id="MgW-DL-7s8"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="112.44377811094454"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mainfish" width="728" height="482"/>
+    </resources>
+</document>

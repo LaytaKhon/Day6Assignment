@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FistListCollectionViewCell" id="gTV-IL-0wX" customClass="FistListCollectionViewCell" customModule="Day6Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="269" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="269" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0u2-eq-beW">
+                        <rect key="frame" x="0.0" y="0.0" width="269" height="145"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6V8-F7-dap">
+                                <rect key="frame" x="16" y="8" width="237" height="15"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXs-Yz-bdw">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="15"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="Mermaid">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0f6-oh-CKc">
+                                        <rect key="frame" x="202" y="0.0" width="35" height="15"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="More">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="tSA-ss-ISi"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zb1-Yp-95a">
+                                <rect key="frame" x="4" y="23" width="261" height="118"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jPr-fu-pxX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zb1-Yp-95a" firstAttribute="leading" secondItem="0u2-eq-beW" secondAttribute="leading" constant="4" id="24Z-T8-iQi"/>
+                            <constraint firstItem="6V8-F7-dap" firstAttribute="top" secondItem="0u2-eq-beW" secondAttribute="top" constant="8" id="AK1-Mk-Brz"/>
+                            <constraint firstAttribute="trailing" secondItem="6V8-F7-dap" secondAttribute="trailing" constant="16" id="Ke8-xY-bGI"/>
+                            <constraint firstItem="zb1-Yp-95a" firstAttribute="top" secondItem="6V8-F7-dap" secondAttribute="bottom" id="X8u-5m-0bJ"/>
+                            <constraint firstAttribute="trailing" secondItem="zb1-Yp-95a" secondAttribute="trailing" constant="4" id="Z2X-bU-3hl"/>
+                            <constraint firstItem="6V8-F7-dap" firstAttribute="leading" secondItem="0u2-eq-beW" secondAttribute="leading" constant="16" id="ZMc-Av-Rrt"/>
+                            <constraint firstAttribute="bottom" secondItem="zb1-Yp-95a" secondAttribute="bottom" constant="4" id="cbL-pB-aEH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0u2-eq-beW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3ar-wq-1Qe"/>
+                <constraint firstItem="0u2-eq-beW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3gC-sC-Qn4"/>
+                <constraint firstAttribute="trailing" secondItem="0u2-eq-beW" secondAttribute="trailing" id="QRs-9f-CX4"/>
+                <constraint firstAttribute="bottom" secondItem="0u2-eq-beW" secondAttribute="bottom" id="TaV-7K-1mr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="269" height="159"/>
+            <connections>
+                <outlet property="btn1" destination="fXs-Yz-bdw" id="Mnh-vY-Nyn"/>
+                <outlet property="btn2" destination="0f6-oh-CKc" id="i13-rc-DbN"/>
+                <outlet property="fishCollectionView" destination="zb1-Yp-95a" id="Icr-dh-Xjq"/>
+            </connections>
+            <point key="canvasLocation" x="69.599999999999994" y="96.7016491754123"/>
+        </collectionViewCell>
+    </objects>
+</document>
